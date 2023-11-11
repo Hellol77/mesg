@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import SectionContainer from "../ui/SectionContainer";
-import LoadingTitle from "./Title";
-import LoadingSubtitle from "./Subtitle";
+import LoadingSubtitle from "./subtitle";
 import LoadingIcon from "../ui/icon/LoadingIcon";
+import LoadingTitle from "./title";
 
 export default function Loading() {
   return (

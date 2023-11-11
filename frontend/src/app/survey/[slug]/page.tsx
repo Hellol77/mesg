@@ -1,5 +1,5 @@
 import SurveySection from "@/components/SurveySection";
-import { SURVEY_QUESTION } from "@/constants/survey";
+import { SURVEY_QUESTION } from "@/constants/Survey";
 import React from "react";
 
 const Survey = SURVEY_QUESTION;
