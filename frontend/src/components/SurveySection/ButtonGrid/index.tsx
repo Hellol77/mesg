@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import SurveyButton from "./SurveyButton";
-import { SURVEY_ANSWERS } from "@/constants/survey";
+import { SURVEY_ANSWERS } from "@/constants/Survey";
 
 const Answers = SURVEY_ANSWERS;
 
