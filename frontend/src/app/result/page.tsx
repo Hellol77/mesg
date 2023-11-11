@@ -17,9 +17,11 @@ export default function Resultpage() {
   }, [mutate]);
 
   const value = data;
-  localStorage.setItem("recommend", data?.company_img || "");
-  localStorage.setItem("recommendId", JSON.stringify(data?.id) || "");
-  localStorage.setItem("total_grade", data?.total_grade || "");
+  if (typeof window !== "undefined") {
+    localStorage.setItem("recommend", data?.company_img || "");
+    localStorage.setItem("recommendId", JSON.stringify(data?.id) || "");
+    localStorage.setItem("total_grade", data?.total_grade || "");
+  }
   return (
     <>
       {data ? (
