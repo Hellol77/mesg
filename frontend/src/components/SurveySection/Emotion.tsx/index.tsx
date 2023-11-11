@@ -1,7 +1,7 @@
 import React from "react";
 import SocialIcon from "@/components/ui/icon/SocialIcon";
 import EnvironmentIcon from "@/components/ui/icon/EnvironmentIcon";
-import StructureIcon from "@/components/ui/icon/StructureIcon";
+import StructureIcon from "@/components/ui/icon/structureIcon";
 import EsgIcon from "@/components/ui/icon/EsgIcon";
 
 export default function Emotion({ number }: { number: number }) {
