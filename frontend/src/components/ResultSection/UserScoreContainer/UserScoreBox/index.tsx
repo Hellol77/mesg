@@ -9,7 +9,7 @@ export default function UserScoreBox({
   score?: ScoreType;
 }) {
   return (
-    <div className=" bg-buttonBackgroundColor rounded-[6.95px] w-[10.25rem] h-[10.22081rem]">
+    <div className=" bg-buttonBackgroundColor rounded-[6.95px]  md:w-[173px] h-[10.22081rem]">
       <div className=" text-subtextColor w-full text-center text-base mt-4 font-Pretendard-SemiBold">
         {title}
       </div>
