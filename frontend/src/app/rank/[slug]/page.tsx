@@ -9,13 +9,15 @@ const RankClassTitle = RANK_CLASS_NAME;
 export default function RankDetailPage({
   params,
 }: {
-  params: { slug: number };
+  params: { slug: string };
 }) {
   const slug = params.slug;
+  console.log(typeof slug);
   const { data, isLoading } = useGet3Rank({ slug });
+  const numSlug = parseInt(slug);
   return (
     <RankSection
-      title={RankClassTitle[slug]}
+      title={RankClassTitle[numSlug]}
       isMore={false}
       data={data || undefined}
       isLoading={isLoading}

@@ -38,15 +38,17 @@ export function useGetGov3Rank() {
   });
 }
 
-export function useGet3Rank({ slug }: { slug: number }) {
+export function useGet3Rank({ slug }: { slug: string }) {
   return useQuery({
     queryKey: ["get3Rank", slug],
-    queryFn: async () => {
-      if (slug === 0) {
+    queryFn: () => {
+      // const numSlug = parseInt(slug);
+      console.log("slug type", typeof slug);
+      if (slug === '0') {
         return getTotalRank();
-      } else if (slug === 1) {
+      } else if (slug === '1') {
         return getEnvRank();
-      } else if (slug === 2) {
+      } else if (slug === '2') {
         return getSocialRank();
       }
       return getGovRank();

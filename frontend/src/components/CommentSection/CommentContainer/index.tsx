@@ -14,6 +14,7 @@ export default function CommentContainer() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     mutate({ company: id, text: textRef.current?.value || "" });
+    (e.target as HTMLFormElement).reset();
   };
   return (
     <div className="mt-8">
